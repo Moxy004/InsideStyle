@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/LOGO.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,18 +18,25 @@
                 <div class="branding">
                     <img src="/img/LOGO.png" alt="" />
                 </div>
-                <div class="header_nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="" class="active">About</a></li>
+                    <ul class="header_nav">
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
                         <li><a href="">Catalog</a></li>
                         <li><a href="">Updates</a></li>
                         <li><a href="">Contacts</a></li>
                     </ul>
+                
+                <div class="toggle__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+            
             </div>
+            
         </div>
     </header>
+    <div class="backDrop"></div>
 
     <section class="aboutUs">
         <div class="container">
@@ -66,7 +74,7 @@
             <h2>Latest Style</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eius.</p>
             <div class="style_wrapper">
-                    <div class="card">
+                    <div class="card" data-aos="fade-down">
                         <img src="./img/latest-1.png" alt="">
                         <div class="card_details">
                             <h4>Formal Theme</h4>
@@ -76,7 +84,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-down">
                         <img src="./img/latest-2.png" alt="">
                         <div class="card_details">
                             <h4>Modern Theme</h4>
@@ -86,7 +94,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-down">
                         <img src="./img/latest-3.png" alt="">
                         <div class="card_details">
                             <h4>Boho Theme</h4>
@@ -97,7 +105,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-down">
                         <img src="./img/latest-4.png" alt="">
                         <div class="card_details">
                             <h4>Minimalist Theme</h4>
@@ -107,7 +115,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-down">
                         <img src="./img/latest-5.png" alt="">
                         <div class="card_details">
                             <h4>Wood Theme</h4>
@@ -117,7 +125,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-down">
                         <img src="./img/latest-6.png" alt="">
                         <div class="card_details">
                             <h4>Spanish Theme</h4>
@@ -155,6 +163,12 @@
 
             </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
