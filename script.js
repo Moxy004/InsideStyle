@@ -9,3 +9,13 @@ toggleMenu.addEventListener("click", () =>{
     backDrop.classList.toggle("open");
     console.log("Button is clicked");
 });
+
+const headerWrapper = document.querySelector(".header_wrapper");
+
+window.addEventListener("scroll", () => {
+    if(window.scrollY >= 100){
+        headerWrapper.classList.add("open");
+    } else {
+        headerWrapper.classList.remove("open");
+    }
+});
