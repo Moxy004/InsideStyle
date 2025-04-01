@@ -132,6 +132,7 @@ img {
     width: 100%;
     background-color: var(--tertiary);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 999;
 }
 
 .header .header_wrapper{
@@ -229,7 +230,7 @@ img {
         top: 0;
         margin-top: 11rem;
         right: -100rem;
-        z-index: 99;
+        z-index: 9999;
         transition: all 0.4s ease-in-out;
     }
 
@@ -543,7 +544,6 @@ img {
 
 .collection .collection_img {
     display: flex;
-
 }
 
 .collection .collection_img img:last-child {
@@ -1247,10 +1247,11 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
+    margin-top: 10rem;
 }
 
 .aboutUs .aboutUs_text h1 {
-    margin-top: 5rem;
+    margin-top: 8rem;
     font-size: 7rem;
     letter-spacing: 1rem;
     font-weight: bold;
@@ -1373,9 +1374,14 @@ img {
 }
 
 .style p {
-    color: var(--dark);
-    text-align: center;
+    color: var(--light);
 }
+
+.style .style_wrapper .card_details p {
+    color: var(--dark);
+}
+
+
 
 @media screen and (max-width: 525px) {
     .style h2 {
@@ -1691,7 +1697,10 @@ img {
 /* Contact Us - CONTACT */
 
 .contactUs{
-    height: 88vh;
+    height: 100vh;
+    padding: 35rem 0;
+    display: flex;
+    align-items: center;
 }
 
 .contactUs_wrapper{
@@ -1701,7 +1710,7 @@ img {
 }
 
 .contactUs h1{
-    margin-top: 15rem;
+    margin-top: 5rem;
     color: var(--primary);
     font-size: 5rem;
     font-weight: bold;
@@ -1775,7 +1784,7 @@ img {
     }
 
     .contactUs{
-        height: 100vh;
+        padding: 50rem 0;
     }
 
     .contactUs .contactUs_details textarea{
@@ -1788,8 +1797,8 @@ img {
         grid-template-columns: 1fr;
     }
 
-    .contactUs{
-        height: 100vh;
+    ..contactUs{
+        padding: 50rem 0;
     }
 
     .contactUs .contactUs_details textarea{
@@ -1803,7 +1812,7 @@ img {
     }
 
     .contactUs{
-        height: 100vh;
+        padding: 50rem 0;
     }
 
     .contactUs .contactUs_details textarea{
@@ -1819,12 +1828,12 @@ img {
     .contactUs{
         height: 85.5vh;
     }
+    
 
-    .contactUs .contactUs_details textarea{
-        height: 10rem;
+    .contactUs{
+        padding: 50rem 0;
     }
 }
-
 
 /* Root Elements */
 :root {
@@ -1850,21 +1859,4 @@ img {
     color: var(--dark);
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: all 0.5s ease;
-}
-
-.btn-tertiary:hover {
-    background-color: var(--primary);
-    color: var(--light);
-    transition: all 0.5s ease;
-}
-
-.btn-nobg {
-    color: var(--primary);
-    transition: all 0.5s ease;
-}
-
-.btn-nobg:hover {
-    color: var(--secondary);
-    transition: all 0.5s ease;
 }
